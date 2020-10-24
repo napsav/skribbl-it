@@ -8,6 +8,14 @@
 	<input type="text" name="hint">
 	<input type="submit">
 	</form>
+	{% if risultati %}
+	<hr>
+	<h3>Risultati</h3>
+	{% for risultato in risultati %}
+	{{ risultato }}<br>
+	{% endfor %}
+	{% else %}
+	{% endif %}
 	<hr>
 	<a href="https://bestemmie.ga">Un altro grande sito</a>
 	<br>
